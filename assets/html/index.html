@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <main>
+    <container>
         <section class="imc-container">
-        <h1>Qual é o meu IMC?</h1>
+            <div class="imc-container-content">
+            <h1>Calcule seu IMC</h1>
 
             <label for="input-weight">Informe o seu peso (kg):</label>
             <input id="input-weight" type="number" step="0.1">
@@ -22,8 +23,9 @@
             <button onclick="calcBMI()">Calcular IMC</button>
             <p id="bmi-result"></p>
             <p id="classification-result"></p>
+        </div>
         </section>
-    </main>
+    </container>
 
     <!-- SCRIPT FILE -->
     <script defer src="/assets/js/script.js"></script>
