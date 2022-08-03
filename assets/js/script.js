@@ -7,7 +7,7 @@ const weight = document.querySelector('#input-weight');
 const calcBMI = ( ) => {
     if (height.value !== '' && weight.value !== '') {
         const imc = (weight.value / (height.value * height.value)).toFixed(2);
-        let classification = '#table-result';
+        let classification = classificationResult;
 
         if (imc >= 0 && imc < 16.9) {
             classification = 'Você está muito abaixo do peso.';
@@ -25,6 +25,7 @@ const calcBMI = ( ) => {
             classification = 'Você está com obesidade grau III.';
         }
 
-        bmiResult.innerHTML = `Seu IMC é: ${imc} ${classification}`;
+        bmiResult.innerHTML = `Seu IMC é: ${imc}.`
+        classificationResult.innerHTML = `${classification}`;
     }
 }
