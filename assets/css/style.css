@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #EBDEF0;
+    background-color: #fff;
 }
 
 .imc-container {
@@ -22,7 +22,7 @@ body {
     margin-top: 15%;
     min-height: 600px;
     min-width: 1200px;
-    background-color: #C39BD3;
+    background-color: #FF9463;
 }
 
 .imc-container-content {
@@ -47,7 +47,7 @@ body {
 
 .imc-container-content input,
 .imc-container-content button {
-    background-color: #EBDEF0;
+    background-color: #FFCCB5;
     border: none;
     margin: 20px;
 }
