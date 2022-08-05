@@ -7,6 +7,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -15,18 +19,18 @@ body {
     background-color: #F8F9F9;
 }
 
-.imc-container {
+.bmi-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 15%;
-    min-height: 600px;
     min-width: 1200px;
+    min-height: auto;
     border-radius: 10px;
     background-color: #EBDEF0;
 }
 
-.imc-container-content {
+.bmi-container-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +38,7 @@ body {
     margin-right: 140px;
 }
 
-.imc-container img {
+.bmi-container img {
     display: flex;
     max-height: 100%;
     max-width: 100%;
@@ -42,35 +46,40 @@ body {
     border-radius: 10px 0 0 10px;
 }
 
-.imc-container-content h1 {
+.bmi-container-content h1 {
     font-size: 30px;
     margin: 40px;
 }
 
-.imc-container-content input {
+.bmi-container p {
+    font-size: 18px;
+}
+
+.bmi-container-content input {
     background-color: #F8F9F9 ;
     border: none;
     margin: 20px;
 }
 
-.imc-container-content button {
+.bmi-container-content button {
     border: none;
     margin: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
     background-color: #C39BD3;
     font-weight: 400;
     cursor: pointer;
 }
 
-.imc-container-content input {
+.bmi-container button:hover {
+    font-weight: 600;
+}
+
+.bmi-container-content input {
     font-size: 16px;
     text-align: center;
     padding: 14px;
     border-radius: 15px;
-}
-
-.imc-container-content button {
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
 }
