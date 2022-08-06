@@ -13,7 +13,7 @@ const calcBMI = ( ) => {
             classification = 'Você está muito abaixo do peso.';
         } if (bmi == 17 && bmi <= 18.4) {
             classification = 'Você está abaixo do peso.';
-        } if (bmi >= 18.5 && ibmi< 24.9) {
+        } if (bmi >= 18.5 && bmi< 24.9) {
             classification = 'Você está com o peso normal.';
         } if (bmi >= 25 && bmi < 29.9) {
             classification = 'Você está acima do peso.';
