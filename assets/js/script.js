@@ -10,22 +10,27 @@ const calcBMI = ( ) => {
         let classification = classificationResult;
 
         if (bmi >= 0 && bmi <= 16.9) {
-            classification = 'Você está muito abaixo do peso.';
-        } if (bmi == 17 && bmi <= 18.4) {
-            classification = 'Você está abaixo do peso.';
+            classification = `Você está muito abaixo do peso.`;
+        } if (bmi >= 17 && bmi <= 18.4) {
+            classification = `Você está abaixo do peso.`;
         } if (bmi >= 18.5 && bmi <= 24.9) {
-            classification = 'Você está com o peso normal.';
+            classification = `Você está com o peso normal.`;
         } if (bmi >= 25 && bmi <= 29.9) {
-            classification = 'Você está acima do peso.';
+            classification = `Você está acima do peso.`;
         } if (bmi >= 30 && bmi <= 34.9) {
-            classification = 'Você está com obesidade grau I.';
+            classification = `Você está com obesidade grau I.`;
         } if (bmi >= 35 && bmi <= 40) {
-            classification = 'Você está com obesidade grau II.';
+            classification = `Você está com obesidade grau II.`;
         } if (bmi > 40) {
-            classification = 'Você está com obesidade grau III.';
+            classification = `Você está com obesidade grau III.`;
         }
 
         bmiResult.innerHTML = `Seu IMC é: ${bmi}.`
         classificationResult.innerHTML = `${classification}`;
+
+        if (height.value == 0 && weight.value == 0) {
+            classification.innerHTML = `Insira um valor válido.`;
+            bmiResult.innerHTML = `Erro.`;
+        }
     }
 }
