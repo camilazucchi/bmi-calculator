@@ -16,6 +16,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
     background-color: #F8F9F9;
 }
 
@@ -23,7 +24,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 15%;
     min-width: 1200px;
     min-height: auto;
     border-radius: 10px;
