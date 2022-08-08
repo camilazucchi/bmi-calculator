@@ -55,6 +55,12 @@ body {
     font-size: 18px;
 }
 
+#bmi-container-p {
+    font-size: 16px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
 .bmi-container-content input {
     background-color: #F8F9F9 ;
     border: none;
