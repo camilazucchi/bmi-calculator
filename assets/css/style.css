@@ -90,3 +90,11 @@ body {
     padding: 0.875rem;
     border-radius: 0.938rem;
 }
+
+footer, a {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+}
