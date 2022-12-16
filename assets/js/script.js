@@ -4,7 +4,7 @@ const classificationResult = document.querySelector('#classification-result');
 const height = document.querySelector('#input-height');
 const weight = document.querySelector('#input-weight');
 
-const calcBMI = () => {
+function calcBMI()  {
     if (height.value !== '' && weight.value !== '') {
         const bmi = (weight.value / (height.value * height.value)).toFixed(2);
         let classification = classificationResult;
