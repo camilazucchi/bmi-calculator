@@ -1,36 +1,37 @@
-// Declarando as variáveis resultado, altura e peso.
+// declarando as variáveis resultado, altura e peso e utilizando o dom.
 const bmiResult = document.querySelector('#bmi-result');
 const classificationResult = document.querySelector('#classification-result');
 const height = document.querySelector('#input-height');
 const weight = document.querySelector('#input-weight');
 
-const calcBMI = ( ) => {
+const calcBMI = () => {
     if (height.value !== '' && weight.value !== '') {
         const bmi = (weight.value / (height.value * height.value)).toFixed(2);
         let classification = classificationResult;
 
         if (bmi >= 0 && bmi <= 16.9) {
-            classification = `Você está muito abaixo do peso.`;
-        } if (bmi >= 17 && bmi <= 18.4) {
-            classification = `Você está abaixo do peso.`;
-        } if (bmi >= 18.5 && bmi <= 24.9) {
-            classification = `Você está com o peso normal.`;
-        } if (bmi >= 25 && bmi <= 29.9) {
-            classification = `Você está acima do peso.`;
-        } if (bmi >= 30 && bmi <= 34.9) {
-            classification = `Você está com obesidade grau I.`;
-        } if (bmi >= 35 && bmi <= 40) {
-            classification = `Você está com obesidade grau II.`;
-        } if (bmi > 40) {
-            classification = `Você está com obesidade grau III.`;
-        }
-
-        bmiResult.innerHTML = `Seu IMC é: ${bmi}.`
-        classificationResult.innerHTML = `${classification}`;
-
-        if (height.value == 0 && weight.value == 0) {
-            classification.innerHTML = `Insira um valor válido.`;
-            bmiResult.innerHTML = `Erro.`;
+            bmiResult.innerHTML = `Seu IMC é: ${bmi}.`
+            classification.innerHTML = `Você está muito abaixo do peso.`;
+        } else if (bmi >= 17 && bmi <= 18.4) {
+            bmiResult.innerHTML = `Seu IMC é: ${bmi}.`
+            classification.innerHTML = `Você está abaixo do peso.`;
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+            bmiResult.innerHTML = `Seu IMC é: ${bmi}.`
+            classification.innerHTML = `Você está com o peso normal.`;
+        } else if (bmi >= 25 && bmi <= 29.9) {
+            bmiResult.innerHTML = `Seu IMC é: ${bmi}.`
+            classification.innerHTML = `Você está acima do peso.`;
+        } else if (bmi >= 30 && bmi <= 34.9) {
+            bmiResult.innerHTML = `Seu IMC é: ${bmi}.`
+            classification.innerHTML = `Você está com obesidade grau I.`;
+        } else if (bmi >= 35 && bmi <= 40) {
+            bmiResult.innerHTML = `Seu IMC é: ${bmi}.`
+            classification.innerHTML = `Você está com obesidade grau II.`;
+        } else if (bmi > 40) {
+            bmiResult.innerHTML = `Seu IMC é: ${bmi}.`
+            classification.innerHTML = `Você está com obesidade grau III.`;
+        } else {
+            classification.innerHTML = `Erro, digite um valor válido.`
         }
     }
 }
