@@ -3,6 +3,7 @@
 
 ## Sobre
 Esse projeto foi o desafio final do processo seletivo da XP Educação. Trata-se de uma calculadora de IMC (Índice de Massa Corporal).
+Para melhor visualização, o projeto encontra-se em deploy [AQUI](https://camilazucchi.github.io/bmi-calculator/).
 
 ## Tecnologias utilizadas
 Para sua construção, foram utilizadas as seguintes tecnologias:
